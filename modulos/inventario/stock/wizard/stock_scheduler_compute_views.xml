@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_procurement_compute_wizard" model="ir.ui.view">
+        <field name="name">Executar agendadores manualmente</field>
+        <field name="model">stock.scheduler.compute</field>
+        <field name="arch" type="xml">
+            <form string="Parameters">
+                <p>
+                Quando você executa os agendadores, o sistema tenta reservar o estoque disponível para preencher as escolhas existentes \n
+                e verifica se algumaa regra de reordenamento deve ser acionada.
+                </p>
+                <footer>
+                    <button name="procure_calculation" string="Executar o Agendador" type="object" class="btn-primary"/>
+                    <button string="Cancelar" class="btn-default" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_procurement_compute" model="ir.actions.act_window">
+        <field name="name">Executar o Agendador</field>
+        <field name="res_model">stock.scheduler.compute</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem action="action_procurement_compute" id="menu_procurement_compute" parent="menu_stock_warehouse_mgmt" sequence="135"/>
+
+
+</odoo>

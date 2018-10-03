@@ -1,0 +1,16 @@
+[Unit]
+Description= Servidor ADAX ERP - ADAX Technology
+Documentation=http://www.adaxtechnology.com/
+Contact=contato@adaxtechnology.com
+After=network.target
+
+[Service]
+Type=simple
+User=adax
+PIDFile=/var/run/adax-erp.pid
+ExecStart=/opt/adax-erp/adax-bin -c /opt/adax-erp/adax-erp.conf
+KillMode=mixed
+Restart=on-abort
+
+[Install]
+WantedBy=default.target
