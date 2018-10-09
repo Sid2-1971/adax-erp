@@ -334,7 +334,7 @@
                                     </group>
                                 </group>
                             </page>
-                            <page name="bank_account" string="Bank Account" attrs="{'invisible': [('type', '!=', 'bank')]}">
+                            <page name="bank_account" string="Conta Bancária" attrs="{'invisible': [('type', '!=', 'bank')]}">
                                 <group>
                                     <group>
                                         <field name="bank_account_id"/>
@@ -389,7 +389,7 @@
             <field name="model">account.journal</field>
             <field name="priority">10</field>
             <field name="arch" type="xml">
-                <form string="Bank Account">
+                <form string="Conta Bancária">
                     <sheet>
                         <field name="type" invisible="1"/>
                         <div class="oe_title">

@@ -956,7 +956,7 @@ class AccountBankAccountsWizard(models.TransientModel):
     _name = 'account.bank.accounts.wizard'
 
     acc_name = fields.Char(string='Account Name.', required=True)
-    bank_account_id = fields.Many2one('wizard.multi.charts.accounts', string='Bank Account', required=True, ondelete='cascade')
+    bank_account_id = fields.Many2one('wizard.multi.charts.accounts', string='Conta Bancária', required=True, ondelete='cascade')
     currency_id = fields.Many2one('res.currency', string='Account Currency',
         help="Forces all moves for this account to have this secondary currency.")
     account_type = fields.Selection([('cash', 'Cash'), ('bank', 'Bank')])

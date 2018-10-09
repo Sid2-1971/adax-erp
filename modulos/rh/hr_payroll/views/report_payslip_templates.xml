@@ -31,7 +31,7 @@
                         <tr>
                             <td><strong>Reference</strong></td>
                             <td><span t-field="o.number"/></td>
-                            <td><strong>Bank Account</strong></td>
+                            <td><strong>Conta Bancária</strong></td>
                             <td><span t-field="o.employee_id.bank_account_id"/></td>
                         </tr>
                         <tr>

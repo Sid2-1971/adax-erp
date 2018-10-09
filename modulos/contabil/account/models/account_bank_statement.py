@@ -354,7 +354,7 @@ class AccountBankStatementLine(models.Model):
     journal_currency_id = fields.Many2one('res.currency', related='statement_id.currency_id',
         help='Utility field to express amount currency', readonly=True)
     partner_id = fields.Many2one('res.partner', string='Partner')
-    bank_account_id = fields.Many2one('res.partner.bank', string='Bank Account')
+    bank_account_id = fields.Many2one('res.partner.bank', string='Conta Bancária')
     account_id = fields.Many2one('account.account', string='Counterpart Account', domain=[('deprecated', '=', False)],
         help="This technical field can be used at the statement line creation/import time in order to avoid the reconciliation"
              " process on it later on. The statement line will simply create a counterpart on this account")

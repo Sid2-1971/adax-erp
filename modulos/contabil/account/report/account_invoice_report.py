@@ -62,7 +62,7 @@ class AccountInvoiceReport(models.Model):
     date_due = fields.Date(string='Due Date', readonly=True)
     account_id = fields.Many2one('account.account', string='Account', readonly=True, domain=[('deprecated', '=', False)])
     account_line_id = fields.Many2one('account.account', string='Account Line', readonly=True, domain=[('deprecated', '=', False)])
-    partner_bank_id = fields.Many2one('res.partner.bank', string='Bank Account', readonly=True)
+    partner_bank_id = fields.Many2one('res.partner.bank', string='Conta Bancária', readonly=True)
     residual = fields.Float(string='Due Amount', readonly=True)
     user_currency_residual = fields.Float(string="Total Residual", compute='_compute_amounts_in_user_currency', digits=0)
     country_id = fields.Many2one('res.country', string='Country of the Partner Company')

@@ -20,4 +20,4 @@ class PaymentMode(models.Model):
             'account.payment.mode'))
     active = fields.Boolean(string='Active', default=True)
     bank_account_id = fields.Many2one(
-        'res.partner.bank', string="Bank Account", ondelete='restrict')
+        'res.partner.bank', string="Conta Bancária", ondelete='restrict')
