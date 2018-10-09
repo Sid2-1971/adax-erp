@@ -5,7 +5,7 @@
     <field name="name">account.payment.mode.form</field>
     <field name="model">account.payment.mode</field>
     <field name="arch" type="xml">
-        <form string="Payment Mode">
+        <form string="Modo de Pagamento">
             <group name="main">
                 <field name="name"/>
                 <field name="company_id" groups="base.group_multi_company"/>
@@ -33,7 +33,7 @@
     <field name="name">account.payment.mode.tree</field>
     <field name="model">account.payment.mode</field>
     <field name="arch" type="xml">
-        <tree string="Modos de pagamento">
+        <tree string="Modos de Pagamento">
             <field name="name"/>
             <field name="payment_method_id"/>
             <field name="payment_type"/>
@@ -59,7 +59,7 @@
 </record>
 
 <record id="account_payment_mode_action" model="ir.actions.act_window">
-    <field name="name">Modos de pagamento</field>
+    <field name="name">Modos de Pagamento</field>
     <field name="res_model">account.payment.mode</field>
     <field name="view_mode">tree,form</field>
 </record>

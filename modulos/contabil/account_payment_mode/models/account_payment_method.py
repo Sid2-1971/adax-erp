@@ -20,7 +20,7 @@ class AccountPaymentMethod(models.Model):
         "know the bank account number of your customer or supplier.")
     payment_mode_ids = fields.One2many(
         comodel_name='account.payment.mode', inverse_name='payment_method_id',
-        string='Modos de pagamento')
+        string='Modos de Pagamento')
 
     @api.multi
     @api.depends('code', 'name', 'payment_type')

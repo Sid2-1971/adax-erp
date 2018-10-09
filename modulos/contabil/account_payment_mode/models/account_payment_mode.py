@@ -11,10 +11,10 @@ class AccountPaymentMode(models.Model):
     important changes. It also replaces the object payment.method
     of the module sale_payment_method of OCA/e-commerce"""
     _name = "account.payment.mode"
-    _description = 'Modos de pagamento'
+    _description = 'Modos de Pagamento'
     _order = 'name'
 
-    name = fields.Char(string='Name', required=True, translate=True)
+    name = fields.Char(string='Nome', required=True, translate=True)
     company_id = fields.Many2one(
         'res.company', string='Company', required=True, ondelete='restrict',
         default=lambda self: self.env['res.company']._company_default_get(

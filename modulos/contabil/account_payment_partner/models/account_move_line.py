@@ -10,7 +10,7 @@ class AccountMoveLine(models.Model):
 
     payment_mode_id = fields.Many2one(
         'account.payment.mode',
-        string='Payment Mode',
+        string='Modo de Pagamento',
         domain="[('company_id', '=', company_id)]",
         ondelete='restrict'
     )
