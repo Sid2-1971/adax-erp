@@ -223,7 +223,7 @@ Best Regards,'''))
 
         res = {
             'type': 'ir.actions.act_window',
-            'name': _('Bank Account'),
+            'name': _('Conta Bancária'),
             'view_mode': 'form',
             'res_model': 'account.journal',
             'target': 'new',

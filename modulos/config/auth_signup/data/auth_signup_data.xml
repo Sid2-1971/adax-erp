@@ -38,7 +38,7 @@
     <p>Foi solicitada uma redefinição de senha da conta do sistema vinculada a este e-mail.</p>
     <p>Você pode alterar sua senha seguindo este link que permanecerá válido durante 24 horas:</p>
     <div style="text-align: center; margin-top: 16px;">
-        <a href="${object.signup_url}" style="padding: 5px 10px; font-size: 12px; line-height: 18px; color: #FFFFFF; border-color:#337cb2; text-decoration: none; display: inline-block; margin-bottom: 0px; font-weight: 400; text-align: center; vertical-align: middle; cursor: pointer; white-space: nowrap; background-image: none; background-color: #337cb2; border: 1px solid #875A7B; border-radius:3px">Alterar Senha</a>
+        <a href="${object.signup_url}" style="padding: 5px 10px; font-size: 12px; line-height: 18px; color: #FFFFFF; border-color:#337cb2; text-decoration: none; display: inline-block; margin-bottom: 0px; font-weight: 400; text-align: center; vertical-align: middle; cursor: pointer; white-space: nowrap; background-image: none; background-color: #337cb2; border: 1px solid #347DB3; border-radius:3px">Alterar Senha</a>
     </div>
     <p>Se você não solicitou a alteração de senha, entre em contato com o administrador do sistema</p>
     <p>Atenciosamente,</p>
@@ -121,7 +121,7 @@
         Para obter acesso à sua conta, você pode usar o seguinte link:
     </p>
     <div style="text-align: center; margin-top: 16px;">
-        <a href="/web/login?${ctx['auth_login']}" style="padding: 5px 10px; font-size: 12px; line-height: 18px; color: #FFFFFF; border-color:#337cb2; text-decoration: none; display: inline-block; margin-bottom: 0px; font-weight: 400; text-align: center; vertical-align: middle; cursor: pointer; white-space: nowrap; background-image: none; background-color: #337cb2; border: 1px solid #875A7B; border-radius:3px">Ir para minha conta</a>
+        <a href="/web/login?${ctx['auth_login']}" style="padding: 5px 10px; font-size: 12px; line-height: 18px; color: #FFFFFF; border-color:#337cb2; text-decoration: none; display: inline-block; margin-bottom: 0px; font-weight: 400; text-align: center; vertical-align: middle; cursor: pointer; white-space: nowrap; background-image: none; background-color: #337cb2; border: 1px solid #347DB3; border-radius:3px">Ir para minha conta</a>
     </div>
     <p>Atenciosamente,</p>
 </div>

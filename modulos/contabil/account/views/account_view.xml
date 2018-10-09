@@ -428,7 +428,7 @@
             </field>
         </record>
         <record id="action_account_bank_journal_form" model="ir.actions.act_window">
-            <field name="name">Bank Accounts</field>
+            <field name="name">Contas Bancárias</field>
             <field name="res_model">account.journal</field>
             <field name="view_mode">tree,kanban,form</field>
             <field name="view_ids" eval="[(5, 0, 0),

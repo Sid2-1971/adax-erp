@@ -86,7 +86,7 @@
         sequence="2"/>
 
     <menuitem id="menu_config_bank_accounts"
-        name="Bank Accounts"
+        name="Contas Bancárias"
         parent="res_partner_menu_config"
         sequence="6"/>
 
