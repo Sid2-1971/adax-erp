@@ -14,7 +14,7 @@ class AccountCashRounding(models.Model):
     _name = 'account.cash.rounding'
     _description = 'Account Rounding'
 
-    name = fields.Char(string='Name', translate=True, required=True)
+    name = fields.Char(string='Nome', translate=True, required=True)
     rounding = fields.Float(string='Rounding Precision', required=True,
         help='Represent the non-zero value smallest coinage (for example, 0.05).')
     strategy = fields.Selection([('biggest_tax', 'Modify tax amount'), ('add_invoice_line', 'Add a rounding line')],

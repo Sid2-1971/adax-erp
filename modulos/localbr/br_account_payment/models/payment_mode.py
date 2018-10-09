@@ -10,7 +10,7 @@ class PaymentMode(models.Model):
     _description = 'Modo de Pagamento'
     _order = 'name'
 
-    name = fields.Char(string='Name', required=True, translate=True)
+    name = fields.Char(string='Nome', required=True, translate=True)
     type = fields.Selection(
         [('receivable', 'Recebível'), ('payable', 'Pagável')],
         string="Tipo de Transação", default='receivable')
@@ -18,6 +18,6 @@ class PaymentMode(models.Model):
         'res.company', string='Company', required=True, ondelete='restrict',
         default=lambda self: self.env['res.company']._company_default_get(
             'account.payment.mode'))
-    active = fields.Boolean(string='Active', default=True)
+    active = fields.Boolean(string='Ativo', default=True)
     bank_account_id = fields.Many2one(
         'res.partner.bank', string="Conta Bancária", ondelete='restrict')
