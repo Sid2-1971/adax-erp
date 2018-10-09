@@ -55,9 +55,9 @@ class ResPartnerBank(models.Model):
     bancárias no Brasil."""
     _inherit = 'res.partner.bank'
 
-    acc_number = fields.Char('Account Number', size=64, required=False)
+    acc_number = fields.Char('Número da Conta', size=64, required=False)
     acc_number_dig = fields.Char(u'Dígito da Conta', size=8)
-    bra_number = fields.Char(u'Agency', size=8)
+    bra_number = fields.Char(u'Número da Agência', size=8)
     bra_number_dig = fields.Char(u'Dígito da Agência', size=8)
 
     @api.depends('bank_id', 'acc_number', 'acc_number_dig',
