@@ -841,12 +841,12 @@ msgstr "Conta Nº."
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_partner_bank_acc_number
 msgid "Account Number"
-msgstr "Número de Conta"
+msgstr "Número da Conta"
 
 #. module: base
 #: sql_constraint:res.partner.bank:0
 msgid "Account Number must be unique"
-msgstr "Número de Conta deve ser exclusivo"
+msgstr "Número da Conta deve ser exclusivo"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_accounting_and_finance
@@ -8064,7 +8064,7 @@ msgstr "San Marino"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_partner_bank_sanitized_acc_number
 msgid "Sanitized Account Number"
-msgstr "Número de Conta Sanitizada"
+msgstr "Número da Conta Sanitizada"
 
 #. module: base
 #: model:res.country,name:base.sa
