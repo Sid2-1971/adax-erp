@@ -34,7 +34,7 @@
                            icon="fa-tasks"
                            attrs="{'invisible': [('tasks_count', '=', 0)]}"
                            groups="project.group_project_user">
-                           <field name="tasks_count" widget="statinfo" string="Tasks"/>
+                           <field name="tasks_count" widget="statinfo" string="Tarefas"/>
                        </button>
                     </xpath>
                 </data>

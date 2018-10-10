@@ -187,8 +187,8 @@ class Project(models.Model):
         default=lambda self: self.env.user.company_id.resource_calendar_id.id,
         help="Timetable working hours to adjust the gantt diagram report")
     type_ids = fields.Many2many('project.task.type', 'project_task_type_rel', 'project_id', 'type_id', string='Tasks Stages')
-    task_count = fields.Integer(compute='_compute_task_count', string="Tasks")
-    task_needaction_count = fields.Integer(compute='_compute_task_needaction_count', string="Tasks")
+    task_count = fields.Integer(compute='_compute_task_count', string="Tarefas")
+    task_needaction_count = fields.Integer(compute='_compute_task_needaction_count', string="Tarefas")
     task_ids = fields.One2many('project.task', 'project_id', string='Tasks',
                                domain=['|', ('stage_id.fold', '=', False), ('stage_id', '=', False)])
     color = fields.Integer(string='Color Index')
