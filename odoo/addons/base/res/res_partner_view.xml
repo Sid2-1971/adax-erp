@@ -43,7 +43,7 @@
             <field eval="8" name="priority"/>
             <field name="arch" type="xml">
                 <tree string="Contacts">
-                    <field name="display_name" string="Nome"/>
+                    <field name="display_name" string="Name"/>
                     <field name="function" invisible="1"/>
                     <field name="phone"/>
                     <field name="email"/>

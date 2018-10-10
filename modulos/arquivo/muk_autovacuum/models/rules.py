@@ -55,11 +55,11 @@ class AutoVacuumRules(models.Model):
     #----------------------------------------------------------
     
     name = fields.Char(
-        string='Nome',
+        string='Name',
         required=True)
     
     active = fields.Boolean(
-        string='Ativo',
+        string='Active',
         default=True)
     
     state = fields.Selection(

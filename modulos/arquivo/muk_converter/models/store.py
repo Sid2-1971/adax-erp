@@ -32,7 +32,7 @@ class Store(models.Model):
 
     name = fields.Char(
         compute="_compute_name",
-        string="Nome",
+        string="Name",
         store=True)
 
     used_date = fields.Date(

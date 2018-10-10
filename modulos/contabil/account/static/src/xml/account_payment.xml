@@ -49,7 +49,7 @@
         <div>
             <table>
                 <tr>
-                    <td><strong>Nome: </strong></td>
+                    <td><strong>Name: </strong></td>
                     <td style="text-align:right;"><t t-esc="name"/></td>
                 </tr>
                 <tr>
