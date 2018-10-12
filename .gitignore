@@ -12,6 +12,8 @@ __pycache__
 .vs/
 
 #
+.bash_history
+.cache
 .log
 .local/
 .sudo_as_admin_successful
